@@ -3,7 +3,7 @@ import { Button } from '@nextui-org/button';
 export default function Home() {
   return (
     <main>
-      <Button>Hello</Button>
+      <Button variant="bordered">Hello</Button>
     </main>
   );
 }
