@@ -1,9 +1,9 @@
-import { Button } from '@nextui-org/button';
+import { Button } from "@nextui-org/button";
 
 export default function Home() {
   return (
-    <main>
+    <div className="w-full basis-4/6">
       <Button variant="bordered">Hello</Button>
-    </main>
+    </div>
   );
 }
