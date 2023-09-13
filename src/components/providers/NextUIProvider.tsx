@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { NextUIProvider } from '@nextui-org/react';
+import { NextUIProvider } from "@nextui-org/react";
 
 export default function NextUiProvider({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {

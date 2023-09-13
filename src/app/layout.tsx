@@ -1,12 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 
 import QueryProvider from "@/components/providers/QueryProvider";
 import NextUiProvider from "@/components/providers/NextUIProvider";
-import Sidebar from "@/components/sidebar";
+import Navigation from "@/components/Navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+const sourceSans = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,11 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={inter.className}>
+      <body className={sourceSans.className}>
         <QueryProvider>
           <NextUiProvider>
             <main className="flex h-screen w-full">
-              <Sidebar />
+              <Navigation />
               {children}
             </main>
           </NextUiProvider>
